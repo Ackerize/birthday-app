@@ -16,15 +16,26 @@ export const fomartItemDate = (date) => {
   return moment(date).format("MMMM D");
 };
 
+export const diffTotal = (date) => {
+  const today = moment().set({
+    hour: 0,
+    minute: 0,
+    second: 0,
+    millisecond: 0,
+  });
+  const target = moment(date);
+  return today.diff(target, 'days');
+}
+
 export const diffDays = (date) => {
   const today = moment()
-  const target = moment(date);
-  const totalDiff = today.diff(target, 'days');
+  const totalDiff = diffTotal(date);
 
   if(totalDiff <= 0){
     return totalDiff * -1;
   }else if(totalDiff > 0){
     const newDate = moment(addYear(date))
-    return newDate.diff(today, 'days');
+    const diff = newDate.diff(today, 'days')
+    return diff;
   }
 }
