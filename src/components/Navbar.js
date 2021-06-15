@@ -21,7 +21,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
-       { `Bienvenido ${name}` }
+       { `Welcome, ${name}` }
       </Link>
       <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul className="navbar-nav ml-auto">

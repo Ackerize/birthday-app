@@ -5,7 +5,7 @@ import { AuthContext } from "../auth/AuthContext";
 import { useForm } from "../hooks/useForm";
 import { API_URL } from "../utils/constants";
 
-export const SearchBar = ({ setNotes }) => {
+export const SearchBar = ({ setBirthdays }) => {
   const {
     user: { id },
   } = useContext(AuthContext);
@@ -18,14 +18,14 @@ export const SearchBar = ({ setNotes }) => {
     e.preventDefault();
     if(!validator.isEmpty(values.text)) {
       axios
-      .get(`${API_URL}/notes/search/${id}/${values.text}`)
+      .get(`${API_URL}/birthdays/search/${id}/${values.text}`)
       .then(({ data }) => {
-        setNotes(data);
+        setBirthdays(data);
       })
       .catch(({ response }) => {
         const { status } = response;
         if (status === 404) {
-          setNotes([0, `No se encontró ninguna nota que coincida con '${values.text}'.`]);
+          setBirthdays([0, `No birthdays found matching '${values.text}'.`]);
         }
       });
     }
@@ -49,7 +49,7 @@ export const SearchBar = ({ setNotes }) => {
               <input
                 id="search"
                 type="text"
-                placeholder="Escribe algo"
+                placeholder="Type something to search"
                 autoComplete="off"
                 name="text"
                 value={values.text}

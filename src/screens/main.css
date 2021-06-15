@@ -1429,3 +1429,35 @@ h3 {
     padding: 0px 20px 0px 60px;
   }
 }
+
+.birthday-item-container{
+  display: flex;
+  border: 1px solid #7E4DFF;
+  border-radius: 10px;
+  background-color: #7E4DFF;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.birthday-timer{
+  background-color: #946EFF;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.birthday-date{
+  color: #b39ddb;
+  font-size: 1.1rem;
+}
+
+.birthday-person{
+  font-size: 1.3rem;
+}
+
+/* 946EFF */
