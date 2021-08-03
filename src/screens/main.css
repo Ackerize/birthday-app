@@ -1195,11 +1195,11 @@ hr.hr-order-details {
   margin-left: -1rem;
 }
 
-.title-note-container{
+.title-note-container {
   width: 100%;
 }
 
-.title-note{
+.title-note {
   text-align: center;
 }
 
@@ -1348,11 +1348,6 @@ h3 {
     font-size: 2.5rem;
   }
 
-  body {
-    padding-left: 15px;
-    padding-right: 25px;
-  }
-
   .s006 legend {
     font-size: 18px !important;
   }
@@ -1367,11 +1362,6 @@ h3 {
     font-size: 2.7rem;
   }
 
-  body {
-    padding-left: 15px;
-    padding-right: 40px;
-  }
-
   .s006 legend {
     font-size: 20px !important;
   }
@@ -1384,11 +1374,6 @@ h3 {
 @media (min-width: 425px) and (max-width: 767px) {
   .highlight {
     font-size: 2.7rem;
-  }
-
-  body {
-    padding-left: 20px;
-    padding-right: 40px;
   }
 
   .s006 legend {
@@ -1430,11 +1415,11 @@ h3 {
   }
 }
 
-.birthday-item-container{
+.birthday-item-container {
   display: flex;
-  border: 1px solid #7E4DFF;
+  border: 1px solid #7e4dff;
   border-radius: 10px;
-  background-color: #7E4DFF;
+  background-color: #7e4dff;
   color: #fff;
   padding: 1rem 2rem;
   margin: 1rem;
@@ -1442,8 +1427,8 @@ h3 {
   cursor: pointer;
 }
 
-.birthday-timer{
-  background-color: #946EFF;
+.birthday-timer {
+  background-color: #946eff;
   border-radius: 10px;
   height: fit-content;
   padding: 0.75rem 1rem;
@@ -1451,13 +1436,126 @@ h3 {
   text-transform: uppercase;
 }
 
-.birthday-date{
+.birthday-date {
   color: #b39ddb;
   font-size: 1.1rem;
 }
 
-.birthday-person{
+.birthday-person {
   font-size: 1.3rem;
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  div.wrapper {
+    padding: 0 2rem;
+  }
+
+  .card-5 div.card-body {
+    padding: 52px 70px !important;
+  }
+
+  .container-dates > svg {
+    overflow: initial;
+  }
+}
+
+@media (max-width: 425px) {
+  div.wrapper {
+    padding: 0 2rem;
+  }
+  .s006{
+    width: 100%;	
+  }
+
+  .birthday-item-container{
+    padding: 1rem 1.2rem;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .card-5 div.card-body {
+    padding: 50px 40px !important;
+}
+
+  .s006 form .inner-form .input-field input {
+    width: 100%;
+  }
+
+  .header-content {
+    margin-bottom: 3rem;
+  }
+
+  #container-btn, #container-btn-register {
+    margin-top: 0rem !important;
+  }
+
+  #btn-submit {
+    height:fit-content;
+    padding: 0 3rem;
+  }
+
+  .btn {
+    padding: 0 20px;
+  }
+
+  div#container-btn > button.btn.custom-add-note {
+    padding: 0 50px !important;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  div.wrapper {
+    padding: 0 1rem;
+  }
+  .btn {
+    padding: 0 12px;
+  }
+
+  .input-date-picker {
+    width: 65% !important;
+  }
+
+  .card-5 div.card-body {
+    padding: 45px 30px !important;
+  }
+}
+
+div.btn {
+  cursor: default !important;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 375px) {
+  .card-5 div.card-body {
+    padding: 45px 40px !important;
+  }
+  .birthday-timer{
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.75rem 0.75rem;
+  }
+  .birthday-date{
+    font-size: 0.9rem;
+  }
+  .birthday-item-container{
+    margin: 1rem 0rem;
+    padding: 1rem 0.8rem;
+  }
+}
 /* 946EFF */

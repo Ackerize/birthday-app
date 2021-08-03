@@ -1,6 +1,6 @@
 import moment from "moment";
 
-export const API_URL = "http://localhost:3001";
+export const API_URL = "https://birthday-reminder-app-api.herokuapp.com";
 
 const addYear = (date) => {
   const aux = new Date(date);
@@ -12,8 +12,7 @@ const addYear = (date) => {
 export const formatMySQLDate = (date) => moment(date).format("YYYY-MM-DD");
 
 export const fomartItemDate = (date) => {
-  moment.locale("es");
-  return moment(date).format("MMMM D");
+  return moment(date).add(1, 'days').format("MMMM D");
 };
 
 export const diffTotal = (date) => {
@@ -23,7 +22,13 @@ export const diffTotal = (date) => {
     second: 0,
     millisecond: 0,
   });
-  const target = moment(date);
+  
+  const target = moment(date).add(1, 'days').set({
+    hour: 0,
+    minute: 0,
+    second: 0,
+    millisecond: 0,
+  });
   return today.diff(target, 'days');
 }
 

@@ -53,7 +53,7 @@ export const HomeScreen = () => {
   return (
     <>
       <div className="header-content">
-        <SearchBar setBirthdays={setBirthdays} />
+        <SearchBar setBirthdays={formatData} />
         <div className="btn container-nueva-note" id="container-btn">
           <button
             className="btn btn--blue btn--radius-2 custom-add-note"

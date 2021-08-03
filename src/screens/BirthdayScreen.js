@@ -10,6 +10,7 @@ import { API_URL, formatMySQLDate } from "../utils/constants";
 import { enGB } from "date-fns/locale";
 import { DatePicker } from "react-nice-dates";
 import "react-nice-dates/build/style.css";
+import moment from "moment";
 
 export const BirthdayScreen = () => {
   const {
@@ -39,7 +40,8 @@ export const BirthdayScreen = () => {
             birthday,
             idUser: id,
           });
-          setDate(new Date(birthday));
+          const auxDate = moment(birthday).add(1, 'days')
+          setDate(new Date(auxDate));
         });
     }
   }, []);
@@ -144,6 +146,7 @@ export const BirthdayScreen = () => {
                         name="person"
                         value={values.person}
                         onChange={handleInputChange}
+                        autoComplete="off"
                       />
                     </div>
                   </div>

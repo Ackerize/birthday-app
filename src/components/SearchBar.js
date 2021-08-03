@@ -49,7 +49,7 @@ export const SearchBar = ({ setBirthdays }) => {
               <input
                 id="search"
                 type="text"
-                placeholder="Type something to search"
+                placeholder="Type something"
                 autoComplete="off"
                 name="text"
                 value={values.text}
