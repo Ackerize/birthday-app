@@ -1505,6 +1505,21 @@ h3 {
   .title {
     font-size: 22px;
   }
+  .card-5 div.card-body {
+    padding: 45px 40px !important;
+  }
+  .birthday-timer{
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.75rem 0.75rem;
+  }
+  .birthday-date{
+    font-size: 0.9rem;
+  }
+  .birthday-item-container{
+    margin: 1rem 0rem;
+    padding: 1rem 0.8rem;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1535,22 +1550,3 @@ div.btn {
   transform: translate(-50%, -50%);
   margin-right: 0.5rem;
 }
-
-@media (max-width: 375px) {
-  .card-5 div.card-body {
-    padding: 45px 40px !important;
-  }
-  .birthday-timer{
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 0.75rem 0.75rem;
-  }
-  .birthday-date{
-    font-size: 0.9rem;
-  }
-  .birthday-item-container{
-    margin: 1rem 0rem;
-    padding: 1rem 0.8rem;
-  }
-}
-/* 946EFF */
